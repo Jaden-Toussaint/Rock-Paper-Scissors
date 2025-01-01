@@ -35,7 +35,7 @@ main {
     border: solid 4px #ffedb9;
 }
 
-.result-display {
+.results-display {
     display: flex;
     justify-content: space-between;
     padding: 24px;
@@ -55,7 +55,6 @@ main {
 }
 
 .cpu-choice-text {
-    border: solid;
     transform: rotate(-90deg);
 }
 .cpu-choice-text-anim {
@@ -81,7 +80,6 @@ main {
 }
 
 .options-choice {
-    border: solid;
     display: flex;
     justify-content: space-between;
     margin-top: 24px;

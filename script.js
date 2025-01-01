@@ -71,6 +71,6 @@ function showResultGame() {
         scoreWonText.textContent++
     } else {
         gameTitle.textContent = "You Lost!"
-        scoreLostText.textContent--
+        scoreLostText.textContent++
     }
 }

@@ -44,15 +44,22 @@ main {
 
 .player-choice-text, .cpu-choice-text {
     font-size: 80px;
+    position: relative;
 }
 
 .player-choice-text {
     transform: rotate(90deg) rotateY(180deg);
 }
+.player-choice-text-anim {
+    animation: player-shake-result 0.4s ease alternate infinite;
+}
 
 .cpu-choice-text {
     border: solid;
     transform: rotate(-90deg);
+}
+.cpu-choice-text-anim {
+    animation: cpu-shake-result 0.4s ease alternate infinite;
 }
 
 .versus-text {
@@ -106,4 +113,26 @@ main {
     text-align: center;
     margin-top: 8px;
     font-weight: 600;
+}
+
+@keyframes player-shake-result {
+    from {
+        bottom: 5px;
+        rotate: -5deg;
+    }
+    to {
+        bottom: -5px;
+        rotate: 5deg;
+    }
+}
+
+@keyframes cpu-shake-result {
+    from {
+        bottom: 5px;
+        rotate: 5deg;
+    }
+    to {
+        bottom: -5px;
+        rotate: -5deg;
+    }
 }
